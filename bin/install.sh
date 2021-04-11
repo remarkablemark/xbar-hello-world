@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# git working directory
+GIT_WORKING_DIR="$(git rev-parse --show-toplevel)"
+
 # get plugin filename
 PLUGIN_FILENAME="$(
   find plugin -type f -name '*.js' |
@@ -7,4 +10,4 @@ PLUGIN_FILENAME="$(
 )"
 
 # create alias by symlinking plugin in plugin folder
-ln -sf "$(pwd)/plugin/$PLUGIN_FILENAME" "$HOME/Library/Application Support/xbar/plugins/$PLUGIN_FILENAME"
+ln -sf "$GIT_WORKING_DIR/plugin/$PLUGIN_FILENAME" "$HOME/Library/Application Support/xbar/plugins/$PLUGIN_FILENAME"
