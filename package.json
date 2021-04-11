@@ -1,0 +1,8 @@
+{
+  "name": "xbar-hello-world",
+  "version": "1.0.0",
+  "scripts": {
+    "plugin:install": "bin/install.sh",
+    "plugin:uninstall": "bin/uninstall.sh"
+  }
+}
