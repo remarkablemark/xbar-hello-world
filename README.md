@@ -36,7 +36,7 @@ If Apple blocks the app from being opened:
 
 macOS menu bar > Apple > `System Preferences...` > `Security & Privacy` > `General` > "xbar" was blocked from use because it is not from an identified developer > `Open Anyway`
 
-## Install
+## Install Plugin
 
 Clone repository:
 
@@ -45,23 +45,35 @@ git clone https://github.com/remarkablemark/xbar-hello-world.git
 cd xbar-hello-world
 ```
 
-Install plugin by creating an alias:
+Install plugin by creating a symbolic link in the plugin folder:
 
 ```sh
-./bin/install.sh
+npm run plugin:install
 ```
 
 macOS menu bar > `xbar` > `Refresh all`
 
-## Uninstall
+## Open Plugin
 
-macOS menu bar > `xbar` > `Open plugin...` > toggle to turn off
+macOS menu bar > `xbar` > `Open plugin...`
 
-Then delete the alias:
+You can toggle the plugin on/off and change the refresh interval.
+
+## Uninstall Plugin
+
+### Recommended Method
+
+macOS menu bar > `xbar` > `Open plugin...` > `Uninstall this plugin...`
+
+### Alternative Method
+
+Uninstall plugin by deleting the symbolic link in the plugin folder:
 
 ```sh
-./bin/uninstall.sh
+npm run plugin:uninstall
 ```
+
+macOS menu bar > `xbar` > `Refresh all`
 
 ## License
 
