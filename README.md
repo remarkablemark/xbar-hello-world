@@ -2,7 +2,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/remarkablemark/xbar-hello-world)
 
-[xbar](https://github.com/matryer/xbar) plugin that outputs "Hello, World!" in the macOS menu bar.
+[xbar](https://github.com/matryer/xbar) plugin that outputs "Hello, World!" in the macOS menu bar. Watch [YouTube video](https://youtu.be/XaxvMgXoYMw).
 
 ## Prerequisites
 
